@@ -9,9 +9,17 @@ SLOT="0"
 KEYWORDS="~amd64"
 S="${WORKDIR}/${PN}"
 
+BDEPEND="
+    app-arch/tar
+"
+
 RDEPEND="
     app-containers/docker
 "
+
+src_unpack(){
+    tar xvf ${PN}-3.7.9-1-any.pkg.tar.zst
+}
 
 src_install(){
     doins lib/kathara/kathara
