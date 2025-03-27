@@ -18,7 +18,7 @@ RDEPEND="
 "
 
 src_unpack(){
-    tar xvf ${PN}-3.7.9-1-any.pkg.tar.zst
+    tar xvf ${DISTDIR}/${PN}-3.7.9-1-any.pkg.tar.zst
 }
 
 src_install(){
