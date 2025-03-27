@@ -22,5 +22,5 @@ src_unpack(){
 }
 
 src_install(){
-    dobin ${S}/usr/lib/kathara/kathara
+    dolib.so ${S}/usr/lib/kathara/kathara
 }
