@@ -21,9 +21,14 @@ src_unpack(){
     tar xvf ${DISTDIR}/${PN}-3.7.9-1-any.pkg.tar.zst
 }
 
+src_compile(){
+    einfo $(pwd)
+}
+
 src_install(){
+    einfo $(pwd)
     insinto /usr/lib
-    doins -r ${S}/usr/lib/kathara
+    doins -r /usr/lib/kathara
     fperms 0755 /usr/lib/kathara/kathara
 
     dosym /usr/lib/kathara/kathara /usr/bin/kathara
