@@ -7,7 +7,7 @@ SRC_URI="https://github.com/KatharaFramework/Kathara/releases/download/${PV}/${P
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-S="${WORKDIR}/${PN}"
+S="${WORKDIR}"
 
 BDEPEND="
     app-arch/tar
