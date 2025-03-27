@@ -18,6 +18,7 @@ RDEPEND="
 "
 
 src_unpack(){
+    einfo $(pwd)
     tar xvf ${DISTDIR}/${PN}-3.7.9-1-any.pkg.tar.zst
 }
 
