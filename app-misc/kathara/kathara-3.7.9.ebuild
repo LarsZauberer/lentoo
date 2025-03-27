@@ -23,5 +23,5 @@ src_unpack(){
 
 src_install(){
     insinto /usr/lib/kathara
-    doins ${S}/usr/lib/kathara
+    doins -r ${S}/usr/lib/kathara
 }
