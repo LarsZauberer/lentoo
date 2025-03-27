@@ -22,5 +22,5 @@ src_unpack(){
 }
 
 src_install(){
-    doins lib/kathara/kathara
+    doins ${S}/lib/kathara/kathara
 }
