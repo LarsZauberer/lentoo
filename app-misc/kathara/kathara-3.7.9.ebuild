@@ -23,7 +23,7 @@ src_unpack(){
 
 src_install(){
     insinto /usr/lib
-    doins -r /usr/lib/kathara
+    doins -r usr/lib/kathara
     fperms 0755 /usr/lib/kathara/kathara
 
     dosym /usr/lib/kathara/kathara /usr/bin/kathara
